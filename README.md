@@ -25,7 +25,7 @@ Requirements:
 
 - Python ≥3.9
 - Poetry ([official instructions](https://python-poetry.org/docs/)).
-    - For linux, run:  `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -`
+  - For linux, run:  `curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -`
 
 1. Clone the repo
 2. Run `poetry install`
@@ -133,7 +133,7 @@ Here you can see a log of all your previous runs with information on a per-expec
 
 To see your Data Docs, run: `poetry run great_expectations docs build`. This will prompt a yes/no question, answer 'y' and the website should automatically open in a web browser.
 ## Result Example
-In Data Docs you can see the results of all your expectations. 
+In Data Docs you can see the results of all your expectations.
 In the image below, you can see a subset of the results, for column 'Favorite Country' and 'Favorite Foods'
 - ✅ there are no empty entries on the column 'Favorite Country'
 - ❌ there is 1 empty/null entry on the column 'Favorite Foods'
@@ -145,7 +145,7 @@ In the image below, you can see a subset of the results, for column 'Favorite Co
 
 - **Problem**: When running validation.py with a validation suite that contains validations of type *expect_column_values_to_match_regex*, GE will complain and throw an error about the profiler not being able to render something. Nevertheless, everything works as expected.
 
-- **Future nice-to-have**: Columns of type "relate_to", now return the page id of the entry (see column 'Course IDs' or 'Guild member', not the name of the entry itself. This is perfectly ok to run expectations that check a minimum number of entries (e.g. expect_column_values_to_match_regex), but for further string parsing, the name could be more useful.
+- **Future nice-to-have**: Columns of type "relate_to", now return the page id of the entry (see column 'Favorite Foods', not the name of the entry itself. This is perfectly ok to run expectations that check a minimum number of entries (e.g. expect_column_values_to_match_regex), but for further string parsing, the name could be more useful.
 
 ![relate to type column image](./resources/new_relate_to_type_column.png)
 
@@ -157,4 +157,6 @@ Feel free to open up a PR or drop me a message @ ricardo@dataroots.io
 
 ## Curious about other projects? 🤔
 For more cool stuff regarding anything data, check us out:      
-[Website](https://dataroots.io/) [Github](https://github.com/datarootsio)
+[Website](https://dataroots.io/)
+
+[Github](https://github.com/datarootsio)
