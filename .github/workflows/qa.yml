@@ -1,0 +1,21 @@
+name: QA
+
+on: [pull_request]
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+      - name: Linting
+        run: |
+          poetry install
+          poetry run black --experimental-string-processing src
+          poetry run isort --check src

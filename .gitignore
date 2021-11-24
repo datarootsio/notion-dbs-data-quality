@@ -1,0 +1,10 @@
+# Mac-related
+*.DS_Store
+
+# poetry
+
+# python
+__pycache__/
+
+# IntelliJ
+*.iml

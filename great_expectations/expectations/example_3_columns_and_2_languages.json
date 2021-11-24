@@ -1,0 +1,49 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "example_3_columns_and_2_languages",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "Name",
+        "result_format": "BASIC"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "Phone",
+        "result_format": "BASIC"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "Languages",
+        "result_format": "BASIC"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "ge_cloud_id": null,
+      "kwargs": {
+        "column": "Languages",
+        "regex": "(?:.+\\,){1,}.+",
+        "result_format": "BASIC"
+      },
+      "meta": {
+        "notes": "At least 2 or more entries. Using Regex"
+      }
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.13.40"
+  }
+}
