@@ -157,6 +157,5 @@ Feel free to open up a PR or drop me a message @ ricardo@dataroots.io
 
 ## Curious about other projects? 🤔
 For more cool stuff regarding anything data, check us out:      
-[Website](https://dataroots.io/)
-
+[Website](https://dataroots.io/) / 
 [Github](https://github.com/datarootsio)
